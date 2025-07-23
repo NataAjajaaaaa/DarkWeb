@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DARK WEB SIMULATION</title>
+  <style>
+    body {
+      background-color: black;
+      color: #00ff00;
+      font-family: monospace;
+      padding: 20px;
+      text-shadow: 0 0 5px #00ff00;
+    }
+    .center {
+      text-align: center;
+      margin-top: 20%;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: transparent;
+      color: #00ff00;
+      border: 2px solid #00ff00;
+      cursor: pointer;
+      font-size: 18px;
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #00ff00;
+      color: black;
+    }
+    h1 {
+      font-size: 32px;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #00ff00; }
+      to { text-shadow: 0 0 20px #00ff00; }
+    }
+  </style>
+</head>
+<body>
+  <div class="center">
+    <h1>WELCOME TO THE DARK WEB SIMULATION</h1>
+    <p>Are you ready to enter?</p>
+    <button class="btn" onclick="enter()">ENTER</button>
+  </div>
+
+  <script>
+    function enter() {
+      // Ini bakal coba buka file HackerRoom.html via jalur ZArchiver
+      window.location.href = "content://ru.zdevs.zarchiver.external/storage/emulated/0/Download/HackerRoom.html";
+    }
+  </script>
+</body>
+</html>
